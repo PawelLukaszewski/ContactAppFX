@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pawellukaszewski.testFX.controllers.MainController">
+   <children>
+      <ListView fx:id="listsContact" prefHeight="400.0" prefWidth="156.0" style="-fx-border-color: #627aac; -fx-border-width: 2px; -fx-background-color: lightgray;" />
+      <TabPane layoutX="155.0" prefHeight="400.0" prefWidth="444.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Kontakt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="285.0" prefWidth="200.0" style="-fx-background-color: #5173be;">
+                     <children>
+                        <TextField fx:id="textNumber" alignment="CENTER" layoutY="170.0" prefHeight="81.0" prefWidth="445.0" style="-fx-background-color: lightgray; -fx-border-color: #5173be; -fx-border-width: 2px;" text="numer telefonu">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textName" alignment="CENTER" layoutY="66.0" prefHeight="75.0" prefWidth="445.0" style="-fx-background-color: lightgray; -fx-border-color: #5173be; -fx-border-width: 2px;" text="Nazwa kontaktu">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="buttonLogout" layoutX="364.0" layoutY="327.0" mnemonicParsing="false" text="Wyloguj">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonRemoveContact" layoutX="14.0" layoutY="327.0" mnemonicParsing="false" text="Usun kontakt">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #99c2ff;" text="Nowy kontakt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="425.0" style="-fx-background-color: #99c2ff;">
+                     <children>
+                        <TextField fx:id="textNewName" layoutX="62.0" layoutY="126.0" prefHeight="36.0" prefWidth="325.0" promptText="Nazwa kontaktu">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textNewNumber" layoutX="62.0" layoutY="186.0" prefHeight="36.0" prefWidth="325.0" promptText="Numer kontaktu">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="buttonAdd" layoutX="315.0" layoutY="244.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Dodaj">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="14.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@585e4bf3cb11b227491c339a.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="20.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@56382-200.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
