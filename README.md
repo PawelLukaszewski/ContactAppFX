@@ -14,11 +14,11 @@ I decided to created this application to expand my knowledge on JavaFX, MySQL an
 ## Screenshots
 Login section and adding a new user:
 
-![Example screenshot](./screenshot.png)
-
-Main menu section and adding a new contact::
-
 ![Example screenshot](./screenshot2.png)
+
+Main menu section and adding a new contact:
+
+![Example screenshot](./screenshot.png)
 
 ## Technologies
 * Java 8
